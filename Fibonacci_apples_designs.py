@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 ### Fibonacci apples designs, by Henry Segerman http://segerman.org 
 ### 17/07/15
 
@@ -101,8 +102,8 @@ for i in range(start_num+range_start, start_num+range_start+range_width):
         radii.append(radius)
         scales.append(scl)
         offset_insert(c, [x,y], "apple_logo.eps", scl)
-print 'done inserts:', count
-print 'min, max scl in mm:', 10*min(scales), 10*max(scales)
-print 'min, max rad in mm:', 10*min(radii), 10*max(radii)
+print('done inserts:', count)
+print('min, max scl in mm:', 10*min(scales), 10*max(scales))
+print('min, max rad in mm:', 10*min(radii), 10*max(radii))
 c.writeEPSfile("output")
-print 'done saving'
+print('done saving')
